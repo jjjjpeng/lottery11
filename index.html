@@ -157,7 +157,7 @@
        class="pure-button"
        @click="toggle"
        :class="{'button-secondary': !running,
-               'button-success': running}">{{running?'停!':'开始'}}</button>
+               'button-success': running}">{{running?'斯到普!':'开始'}}</button>
     <button class="pure-button button-warning" @click="reset">重置</button>
 </div>
 <script type="text/javascript" src="js/zepto.js"></script>
@@ -218,10 +218,10 @@
         new Vue({
             el: '#tools',
             data: {
-                selected: 5,
+                selected: 1,
                 running: false,
                 btns: [
-                     5, 2, 1
+                      2, 1
                 ]
             },
             mounted () {
@@ -270,5 +270,15 @@
         });
     })();
 </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a31ae4b13221b439150da99fd235fb46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 </body>
 </html>
